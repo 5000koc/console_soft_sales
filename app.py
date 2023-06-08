@@ -12,7 +12,7 @@ def main():
     st.title('2013~2020 PS4 & XBOX 게임 판매량 및 비교')
 
     
-    menu = ['Home','EDA','ML']
+    menu = ['Home','EDA']
     choice = st.sidebar.selectbox('메뉴', menu)
     if choice == menu[0]:
         run_app_home()

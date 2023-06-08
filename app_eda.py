@@ -183,7 +183,7 @@ def run_app_eda():
         plt.ylabel('Sales(million)')
         plt.xticks(rotation = 90)
 
-        plt.pyplot(fig)
+        st.pyplot(fig)
 
     if st.checkbox('XBOX 유럽지역 1백만장 이상 판매된 게임'):
         fig = plt.figure()
@@ -197,7 +197,7 @@ def run_app_eda():
         plt.ylabel('Sales(million)')
         plt.xticks(rotation = 90)
 
-        plt.pyplot(fig)
+        st.pyplot(fig)
 
     if st.checkbox('XBOX 일본지역 판매된 게임'):
         fig = plt.figure()
@@ -211,7 +211,7 @@ def run_app_eda():
         plt.ylabel('Sales(million)')
         plt.xticks(rotation = 90)
 
-        plt.pyplot(fig)
+        st.pyplot(fig)
 
     if st.checkbox('XBOX 그외의 지역 판매된 게임'):
         fig = plt.figure()
@@ -225,11 +225,34 @@ def run_app_eda():
         plt.ylabel('Sales(million)')
         plt.xticks(rotation = 90)
 
-        plt.pyplot(fig)
+        st.pyplot(fig)
 
-    if st.checkbox('PS4 전세계 1천만장 판매된 게임'):
+    if st.checkbox('PS4 전세계 1천만장 이상 판매된 게임'):
         fig = plt.figure()
 
+        x = ['GTA5','CoD:BO3','RDR2','CoD:WW2','FIFA18','FIFA17','Uncharted4']
+        y = [19.39,15.09,13.94,13.4,11.8,10.94,10.33]
 
+        plt.bar(x,y)
+        plt.title('2013~2020 PS4 10million Global Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
 
-        plt.pyplot(fig)
+        st.pyplot(fig)
+    
+    if st.checkbox('XBOX 전세계 5백만장 이상 판매된 게임'):
+        fig = plt.figure()
+
+        x = ['GTA5','CoD:BO3','CoD:WW2','RDR2','Minecraft','CoD:AW','Battlefied ONE','Fallout4']
+        y = [8.72,7.37,6.23,5.77,5.43,5.22,5.13,5.03]
+
+        plt.bar(x,y,color='green')
+        plt.title('2013~2020 XBOX 5million Global Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
+
+        st.pyplot(fig)
+
+        
