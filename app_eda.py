@@ -111,3 +111,22 @@ def run_app_eda():
         plt.ylabel('Published Count')
 
         st.pyplot(fig)
+
+    st.subheader('지역별 최다판매량')
+    st.text('PS4')
+    if st.checkbox('PS4 250만장 이상 판매된 게임(북미지역)')
+        fig = plt.figure()
+
+        x = ['CoD:BO3','GTA5','RDR2','CoD:WW2','Uncahrted4','SpiderMan','StarWars:BF2015','CoD:IW','Fallout4','CoD:AW','God of War','The Last of Us','NBA2016','Uncharted Collection']
+        y = [6.18,6.06,5.26,4.67,4.49,3.64,3.31,3.11,2.91,2.84,2.83,2.7,2.56,2.55]
+
+        plt.bar(x,y)
+        plt.title('2013~2020 PS4 North America 2.5milion Sales Games ')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
+
+        st.pyplot(fig)
+    
+    
+    
