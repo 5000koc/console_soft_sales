@@ -113,8 +113,8 @@ def run_app_eda():
         st.pyplot(fig)
 
     st.subheader('지역별 최다판매량')
-    st.text('PS4')
-    if st.checkbox('PS4 250만장 이상 판매된 게임(북미지역)'):
+    
+    if st.checkbox('PS4 북미지역에서 250만장 이상 판매된 게임'):
         fig = plt.figure()
 
         x = ['CoD:BO3','GTA5','RDR2','CoD:WW2','Uncahrted4','SpiderMan','StarWars:BF2015','CoD:IW','Fallout4','CoD:AW','God of War','The Last of Us','NBA2016','Uncharted Collection']
@@ -128,5 +128,44 @@ def run_app_eda():
 
         st.pyplot(fig)
     
+    if st.checkbox('PS4 유럽지역에서 300만장 이상 판매된 게임'):
+        fig = plt.figure()
+
+        x = ['GTA5','FIFA18','FIFA17','RDR2','CoD:WW2','CoD:BO3','FIFA16','FIFA15','Fallout4','Uncharted4','CoD:IW','Battlefield 1','SpiderMan','CoD:AW','StarWars:BF2015','Minecraft']
+        y = [9.71,8.64,7.95,6.21,6.21,6.05,5.77,4.49,3.97,3.93,3.83,3.65,3.39,3.34,3.19,3.13]
+
+        plt.bar(x,y)
+        plt.title('2013~2020 PS4 Europe 3million Sales Games ')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
     
-    
+        st.pyplot(fig)
+
+    if st.checkbox('PS4 일본지역에서 50만장 이상 판매된 게임'):
+        fig = plt.figure()
+
+        x = ['MonsterHunter:W','DragonQuest11','Final Fantasy XV','GTA5','MGS5','Persona5','DarkSouls3','NierAutomata','Knack','CoD:BO3','Biohazard7']
+        y = [2.17,1.43,1.05,0.6,0.5,0.48,0.44,0.42,0.42,0.41,0.41]
+
+        plt.bar(x,y)
+        plt.title('2013~2020 PS4 Japan Half-million Sales Games ')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)    
+
+        st.pyplot(fig)
+
+    if st.checkbox('PS4 그외의 지역에서 100만장 이상 판매된 게임'):
+        fig = plt.figure()
+
+        x = ['GTA5','CoD:BO3','CoD:WW2','RDR2','FIFA18','Uncharted4','FIFA17','SpiderMan','CoD:IW','Fallout4','StarWars:BF2015','FIFA16','CoD:AW','Battlefield 1','The Last of Us','God of War']
+        y = [3.02,2.44,2.26,2.12,1.73,1.7,1.61,1.41,1.36,1.34,1.3,1.23,1.22,1.12,1.1,1.02]
+
+        plt.bar(x,y)
+        plt.title('2013~2020 PS4 Other Country million Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
+
+        st.pyplot(fig)
