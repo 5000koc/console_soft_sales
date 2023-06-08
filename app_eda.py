@@ -5,15 +5,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run_app_eda():
-    st.subheader('PS4 & XBOX')
+    st.title('PS4 & XBOX')
+    
+    df_ps4 = pd.read_csv('data/PS4_GamesSales_utf8.csv')
+    df_xbox = pd.read_csv('data/XboxOne_GameSales_utf8.csv')  
 
-    df_ps4 = pd.read_csv('/content/drive/MyDrive/PS4_GamesSales_utf8.csv')
-    df_xbox = pd.read_csv('/content/drive/MyDrive/XboxOne_GameSales_utf8.csv')  
-
-    if st.checkbox('데이터프레임 보기'):
+    if st.button('PS4 데이터프레임보기'):
         st.dataframe(df_ps4)
+    if st.button('XBOX 데이터프레임보기'):    
         st.dataframe(df_xbox)
-    st.subheader()
+    
+    
 
 # fig = plt.figure()
 
