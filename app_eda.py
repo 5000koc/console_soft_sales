@@ -172,7 +172,7 @@ def run_app_eda():
 
     st.text('XBOX')
     if st.checkbox('XBOX 북미지역 2백만장 이상 판매된 게임'):
-        fig = plt.figure()
+        fig = plt.figure(fig)
 
         x = ['GTA5','CoD:BO3','RDR2','CoD:WW2','Battlefield 1','CoD:AW','Minecraft','Fallout4','Halo5','CoD:IW','Gears of War:UE','SrarWars:BF2015','Assassin Creed:U','Destiny','Gears of War4','NFL17','NFL16','Halo:Collection','NBA2016']
         y = [4.7,4.63,3.76,3.75,3.37,3.25,3.23,2.94,2.94,2.91,2.88,2.49,2.34,2.17,2.17,2.14,2.13,2.06,2.01]
@@ -186,7 +186,7 @@ def run_app_eda():
         plt.pyplot(fig)
 
     if st.checkbox('XBOX 유럽지역 1백만장 이상 판매된 게임'):
-        fig = plt.figure()
+        fig = plt.figure(fig)
 
         x = ['GTA5','FIFA17','FIFA16','CoD:BO3','ForzaHorizon3','FIFA18','CoD:WW2','Minecraft','Fallout4','Halo5','CoD:AW','RDR2','CoD:IW','FIFA15','Battlefield 1','StarWars:BF2015','Halo:Collection']
         y = [3.25,2.4,2.1,2.04,1.96,1.92,1.91,1.71,1.62,1.49,1.49,1.47,1.44,1.39,1.26,1.26,1.04]
@@ -200,7 +200,7 @@ def run_app_eda():
         plt.pyplot(fig)
 
     if st.checkbox('XBOX 일본지역 판매된 게임'):
-        fig = plt.figure()
+        fig = plt.figure(fig)
 
         x = ['GTA5','FIFA17','FIFA16','CoD:BO3','ForzaHorizon3','FIFA18','CoD:WW2','Minecraft','Fallout4','Halo5','CoD:AW','RDR2','CoD:IW','FIFA15','Battlefield 1','StarWars:BF2015','Halo:Collection']
         y = [3.25,2.4,2.1,2.04,1.96,1.92,1.91,1.71,1.62,1.49,1.49,1.47,1.44,1.39,1.26,1.26,1.04]
@@ -214,7 +214,7 @@ def run_app_eda():
         plt.pyplot(fig)
 
     if st.checkbox('XBOX 그외의 지역 판매된 게임'):
-        fig = plt.figure()
+        fig = plt.figure(fig)
 
         x = ['ForzaMotorsport6','Titanfall','Tombraider:Rise','Halo5','Halo:Collection','ForzaHorizon3','Farcry4','KinectSports','CoD:BO3','PsychoPass','MGS5','StarWars:BF2015','Fallout4','Battlefield 1','Quantumbreak']
         y = [0.04,0.04,0.03,0.03,0.03,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02]
@@ -227,4 +227,3 @@ def run_app_eda():
 
         plt.pyplot(fig)
 
-        
