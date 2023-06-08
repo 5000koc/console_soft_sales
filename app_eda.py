@@ -114,7 +114,7 @@ def run_app_eda():
 
     st.subheader('지역별 최다판매량')
     st.text('PS4')
-    if st.checkbox('PS4 250만장 이상 판매된 게임(북미지역)')
+    if st.checkbox('PS4 250만장 이상 판매된 게임(북미지역)'):
         fig = plt.figure()
 
         x = ['CoD:BO3','GTA5','RDR2','CoD:WW2','Uncahrted4','SpiderMan','StarWars:BF2015','CoD:IW','Fallout4','CoD:AW','God of War','The Last of Us','NBA2016','Uncharted Collection']
