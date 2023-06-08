@@ -256,4 +256,4 @@ def run_app_eda():
 
         st.pyplot(fig)
 
-        
+    

@@ -40,19 +40,19 @@ def run_app_ml():
 
         st.pyplot(fig)
 
-        if st.checkbox('PS4 & XBOX 북미지역 1천만장 판매 게임'):
-            fig = plt.figure()
+    if st.checkbox('PS4 & XBOX 북미지역 1천만장 판매 게임'):
+        fig = plt.figure()
 
-            x = ['CoD:BO3','GTA5','RDR2','CoD:WW2','CoD:AW','CoD:IW','Fallout4','StarWars:BF2015','Battlefield 1','Minecraft']
-            y = [10.81,10.76,9.02,8.42,6.09,6.02,5.85,5.8,5.57,5.12]
+        x = ['CoD:BO3','GTA5','RDR2','CoD:WW2','CoD:AW','CoD:IW','Fallout4','StarWars:BF2015','Battlefield 1','Minecraft']
+        y = [10.81,10.76,9.02,8.42,6.09,6.02,5.85,5.8,5.57,5.12]
 
-            plt.bar(x,y,color='orange')
-            plt.title('2013~2020 PS4 & XBOX North America Best Sales Games')
-            plt.xlabel('Game')
-            plt.ylabel('Sales(million)')
-            plt.xticks(rotation = 90)
+        plt.bar(x,y,color='orange')
+        plt.title('2013~2020 PS4 & XBOX North America Best Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
 
-            st.pyplot(fig)
+        st.pyplot(fig)
 
         if st.checkbox('북미지역 양기종 간 비교'):
             fig = plt.figure()
@@ -75,19 +75,19 @@ def run_app_ml():
 
             st.pyplot(fig)
 
-        if st.checkbox('PS4 & XBOX 유럽지역 최다판매 게임'):
-            fig = plt.figure()
-        
-            x = ['GTA5','FIFA18','FIFA17','CoD:WW2','CoD:BO3','RDR2','FIFA16','FIFA15','Fallout4','CoD:IW']
-            y = [12.96,10.56,10.35,8.12,8.09,7.68,7.67,5.88,5.59,5.27]
+    if st.checkbox('PS4 & XBOX 유럽지역 최다판매 게임'):
+        fig = plt.figure()
+    
+        x = ['GTA5','FIFA18','FIFA17','CoD:WW2','CoD:BO3','RDR2','FIFA16','FIFA15','Fallout4','CoD:IW']
+        y = [12.96,10.56,10.35,8.12,8.09,7.68,7.67,5.88,5.59,5.27]
 
-            plt.bar(x,y,color='orange')
-            plt.title('2013~2020 PS4 & XBOX Europe Best Sales Games')
-            plt.xlabel('Game')
-            plt.ylabel('Sales(million)')
-            plt.xticks(rotation = 90)
+        plt.bar(x,y,color='orange')
+        plt.title('2013~2020 PS4 & XBOX Europe Best Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
 
-            st.pyplot(fig)
+        st.pyplot(fig)
 
         if st.checkbox('유럽지역 양기종 간의 비교'):
             fig = plt.figure()
@@ -110,19 +110,19 @@ def run_app_ml():
 
             st.pyplot(fig)
             
-        if st.checkbox('PS4 & XBOX 일본지역 최다판매 게임'):
-            fig = plt.figure()
+    if st.checkbox('PS4 & XBOX 일본지역 최다판매 게임'):
+        fig = plt.figure()
 
-            x = ['MonsterHunter:W','DragonQuest11','FinalFantasy15','GTA5','MGS5','Persona5','Darksouls3','NierAutomata','Knack','Biohazard7','Cod:BO3']
-            y = [2.17,1.43,1.06,0.61,0.57,0.48,0.44,0.42,0.42,0.41,0.41]
+        x = ['MonsterHunter:W','DragonQuest11','FinalFantasy15','GTA5','MGS5','Persona5','Darksouls3','NierAutomata','Knack','Biohazard7','Cod:BO3']
+        y = [2.17,1.43,1.06,0.61,0.57,0.48,0.44,0.42,0.42,0.41,0.41]
 
-            plt.bar(x,y,color='orange')
-            plt.title('2013~2017 PS4 & XBOX Japan Best Sales Games')
-            plt.xlabel('Game')
-            plt.ylabel('Sales(million)')
-            plt.xticks(rotation = 90)
+        plt.bar(x,y,color='orange')
+        plt.title('2013~2017 PS4 & XBOX Japan Best Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
 
-            st.pyplot(fig)
+        st.pyplot(fig)
 
         if st.checkbox('일본지역 양기종 간의 비교'):
             fig = plt.figure()
@@ -144,19 +144,19 @@ def run_app_ml():
 
             st.pyplot(fig)
 
-        if st.checkbox('PS4 & XBOX 그외의 지역 최다판매 게임'):
-            fig = plt.figure()
+    if st.checkbox('PS4 & XBOX 그외의 지역 최다판매 게임'):
+        fig = plt.figure()
 
-            x = ['GTA5','CoD:BO3','RDR2','CoD:WW2','FIFA18','FIFA17','CoD:IW','Fallout4','Uncharted4','FIFA16']
-            y = [3.98,3.12,2.8,2.69,1.96,1.88,1.8,1.79,1.7,1.47]
+        x = ['GTA5','CoD:BO3','RDR2','CoD:WW2','FIFA18','FIFA17','CoD:IW','Fallout4','Uncharted4','FIFA16']
+        y = [3.98,3.12,2.8,2.69,1.96,1.88,1.8,1.79,1.7,1.47]
 
-            plt.bar(x,y,color='orange')
-            plt.title('2013~2020 PS4 & XBOX Other Country Best Sales Games')
-            plt.xlabel('Game')
-            plt.ylabel('Sales(million)')
-            plt.xticks(rotation = 90)
-            
-            st.pyplot(fig)
+        plt.bar(x,y,color='orange')
+        plt.title('2013~2020 PS4 & XBOX Other Country Best Sales Games')
+        plt.xlabel('Game')
+        plt.ylabel('Sales(million)')
+        plt.xticks(rotation = 90)
+        
+        st.pyplot(fig)
 
         if st.checkbox('그외의 지역 양기종 간의 비교'):
             data_etc = {'Game':['GTA5','CoD:BO3','RDR2','CoD:WW2','FIFA18','FIFA17','CoD:IW','Fallout4','Uncharted4','FIFA16'],
