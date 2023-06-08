@@ -17,9 +17,9 @@ jobs:
       - name: ssh to ec2
         uses: appleboy/ssh-action@master
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
+          key: ${{ secrets.PEM_KEY }}
+          host: ${{ secrets.EC2_IP_ADDRESS }}
+          username: ${{ secrets.LOGIN_ID }}
           script: |
              cd Github/console_soft_sales                        
              git pull
